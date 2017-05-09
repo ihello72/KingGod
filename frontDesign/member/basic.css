@@ -1,0 +1,70 @@
+	@charset "utf-8";
+
+	*{
+	    margin: 0;
+	    padding: 0;
+	    box-sizing: border-box;
+	}
+
+	html,body{
+	    width: 100%;
+	    height: 100%;
+	}
+	html{
+	    font-size: 62.5%;
+	    overflow-y: scroll;
+	}
+	body, input, select, textarea, button{
+	    font-size: 1.4rem;
+	    color: #444;
+	    font-family: 'bmy';
+	    letter-spacing: -0.05em;
+	    line-height: 1;
+	}
+
+	h1,h2,h3,h4,h5,h6{
+	    font-size: 100%;
+	    font-weight: normal;
+	}
+
+	a{
+	    color: inherit;
+	    text-decoration: none;
+	}
+
+	table{
+	    width: 100%;
+	    table-layout: fixed;
+	    word-break: break-all;
+	    border-collapse: collapse;
+	    border-spacing: 0;
+	}
+
+	img, fieldset, hr{
+	    border: none;
+	}
+
+	ul,li{
+	    list-style: none;
+	}
+
+	address, em{
+	    font-style: normal;
+	}
+
+	img, video, canvas{
+	    height: auto;
+	}
+
+	[type='text'], [type='password'], [type='email'], select,
+	textarea{
+	    padding: 0.5em;
+	    border: 1px solid #ccc;
+	}
+
+	@font-face { font-family: 'bmy'; src: url(font/BMYEONSUNG.ttf) format('truetype');}
+
+	html,body{
+		    width: 100%;
+		    height: 100%;
+		}

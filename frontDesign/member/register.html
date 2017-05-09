@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+	body{
+		background-image: url("bg.png");
+		background-size: cover;
+	}
+
+	.layout{
+		width: 1080px;
+		height: 100%;
+		margin: 10% auto;
+		position: relative;
+	}
+
+	.box1{
+		/*float: left;*/
+		background-color: white;
+		width: 50%;
+		height: 500px;
+		position: relative;
+		top: 22.333333%;
+		box-shadow : 2px 2px 10px silver;
+		z-index: 1;
+	}
+
+	.box2{
+		z-index: 0;
+		position: absolute;
+		top: 2%;
+		right: 0;
+		width: 50%;
+		background: linear-gradient(45deg, #ffcd36, #ffd760);
+		/*background-color: linear-gradient( to bottom, yellow, red )*/
+		/*background-color: #ffcd36;*/
+		/*background-color: linear-gradient(#ffcd36, white);*/
+		height: 510px;
+	}
+
+	#logo{
+		position: absolute;
+		left: 23.33333%;
+		top: 20%;
+	}
+
+	.form_layout{
+		width: 100%;
+		padding-top: 10px;
+		text-align: center;
+		color: white;
+	}
+
+	.form{
+		text-align: left;
+		width: 350px;
+		height: 100%;
+		margin: 0 auto;
+	}
+
+	.form [type='text'],[type='password']{
+	    display: block;
+	    padding: 1.2rem;
+	    padding-top: 5px;
+	    padding-bottom: 5px;
+	    width: 300px;
+	    text-align: center;
+	    font-size: 1.2em;
+	    background-color: white;
+	    color: black;
+	    border: none;
+	    border-radius: 5px;
+	}
+
+	.form [type='submit']{
+		margin: 0 auto;
+		margin-top: 30px;
+		display: block;
+		padding: 1rem;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		width: 100px;
+		text-align: center;
+		background-color: white;
+		color: #ffcd36;
+		font-size: 15px;
+		border: none;
+		border-radius: 5px;
+	}
+
+	.form_layout a{
+		text-decoration: none;
+		color: white;
+	}
+	
+	</style>
+</head>
+<body>
+	<div class="layout">
+		<div class="box1">
+			<img src="logo2.png" id="logo">
+		</div>
+		<div class="box2">
+			<div class="form_layout">
+				
+				<h3><span style="font-size: 30px;"><a href="#">로그인</a></span> 혹은 <span style="font-size: 30px;"><a href="#">회원가입</a></span>을 하십시오</h3>
+				<br>
+				<div class="form">
+					<h3 style="font-weight: lighter;">id / 아이디</h2>
+					<input type="text" name="name">
+					<h3 style="font-weight: lighter;">pw / 패스워드</h3>
+					<input type="text" name="pass">
+					<h3 style="font-weight: lighter;">name / 이름</h3>
+					<input type="text" name="name">
+					<input type="submit" value="회원가입">
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
